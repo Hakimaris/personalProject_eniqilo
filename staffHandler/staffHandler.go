@@ -13,6 +13,6 @@ func Register(c *fiber.Ctx) error {
 	return c.SendString("Register")
 }
 
-func login(c *fiber.Ctx) error {
+func Login(c *fiber.Ctx) error {
 	return c.SendString("Register")
 }
