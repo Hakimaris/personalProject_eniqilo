@@ -9,7 +9,7 @@ import (
 	// "github.com/golang-jwt/jwt/v5"
 )
 
-func register(c *fiber.Ctx) error {
+func Register(c *fiber.Ctx) error {
 	return c.SendString("Register")
 }
 
