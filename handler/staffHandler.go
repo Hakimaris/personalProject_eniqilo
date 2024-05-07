@@ -1,0 +1,18 @@
+package staffHandler
+
+import (
+	// "fmt"
+	// "strings"
+	// "time"
+
+	"github.com/gofiber/fiber/v2"
+	// "github.com/golang-jwt/jwt/v5"
+)
+
+func register(c *fiber.Ctx) error {
+	return c.SendString("Register")
+}
+
+func login(c *fiber.Ctx) error {
+	return c.SendString("Register")
+}
