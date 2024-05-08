@@ -4,8 +4,8 @@ import (
 	// "fmt"
 	// "strings"
 	// "time"
-	staffHandler "github.com/Hakimaris/personalProject_eniqilo/staffHandler"
-	// customerHandler "github.com/Hakimaris/personalProject_eniqilo/customerHandler"
+	staffHandler "github.com/Hakimaris/personalProject_eniqilo/handler/staffHandler"
+	// customerHandler "github.com/Hakimaris/personalProject_eniqilo/handler/customerHandler"
 
 	"github.com/gofiber/fiber/v2"
 	// "github.com/golang-jwt/jwt/v5"
