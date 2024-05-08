@@ -22,7 +22,7 @@ func main() {
 	
 	
 	staff := v1.Group("/staff")           
-	staff.Get("/register", staffHandler.Register) 
+	staff.Post("/register", staffHandler.Register) 
 	staff.Post("/login", staffHandler.Login)   
 
 	// customer := v1.Group("/customer")      // /api/v1/customer
