@@ -7,6 +7,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	// "github.com/golang-jwt/jwt/v5"
+	"github.com/Hakimaris/personalProject_eniqilo/helper"
 )
 
 func Register(c *fiber.Ctx) error {

@@ -1,4 +1,3 @@
-// db/db.go
 package db
 
 import (
@@ -75,13 +74,13 @@ func Init() error { // this doenst run first actually, summon the func
 
 	connection, err := pool.Acquire(context.Background())
 	if err != nil {
-		log.Fatalf("Error while acquiring connection from the database pool: %s",err)
+		log.Fatalf("Error while acquiring connection from the database pool: %s", err)
 	}
 	defer connection.Release()
 
 	err = connection.Ping(context.Background())
 	if err != nil {
-		log.Fatalf("Could not ping database : %s",err)
+		log.Fatalf("Could not ping database : %s", err)
 	}
 
 	fmt.Println("Connected to the database!!")
