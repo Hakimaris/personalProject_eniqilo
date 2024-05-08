@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/jackc/pgx/v5"
+	// "github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 
@@ -47,7 +47,7 @@ func Config() (*pgxpool.Config, error) {
 	return dbConfig, nil
 }
 
-func Init() error { // this not actually run first
+func Init() error { // this doenst run first actually, summon the func
 	config, err := Config()
 	if err != nil {
 		return err
@@ -61,10 +61,10 @@ func Init() error { // this not actually run first
 	return nil
 }
 
-func Query(query string, args ...interface{}) (pgx.Rows, error) {
-	rows, err := pool.Query(context.Background(), query, args...)
-	if err != nil {
-		return nil, err
-	}
-	return rows, nil
-}
+// func Query(query string, args ...interface{}) (pgx.Rows, error) { // make it less hassle to run query
+// 	rows, err := pool.Query(context.Background(), query, args...)
+// 	if err != nil {
+// 		return nil, err
+// 	}
+// 	return rows, nil
+// }
